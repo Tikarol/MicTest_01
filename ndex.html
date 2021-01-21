@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+
+    <div>
+        <h1 id="header1" inline="display: none;">Practice.ecitcarP</h1>
+        <!-- <h1 id="header2">HelloMicTest</h1>
+        <button id="btn1">Hide</button><button id="btn2">Show</button> -->
+        <p>
+            <em>Headliner</em>
+        </p>
+        <!-- <ul>
+            <li class="list">list 1</li>
+            <li class="list">list 2</li>
+            <li class="list">list 3</li>
+            <li class="list">list 4</li>
+            <li class="list">list 5</li>
+        </ul> -->
+        <select id="select">
+            <option value="True">A</option>
+            <option value="False">B</option>
+            <option value="Both">C</option>
+        </select>
+
+        <input type="text" name="firstname" id="name">
+        <button id="btn3">Click</button>
+
+    </div>
+
+    <script>
+        // var header2 = $('#header2');
+        // var lists = $('.list');
+
+        // console.log(header1, header2, lists);
+
+
+
+        $('Document').ready(function() {
+
+
+            // $('#btn1').click(function() {
+            //     header1.animate({
+            //         fontSize: '50px',
+            //         fontColor: 'red',
+            //         letterSpacing: '20px'
+            //     })
+            //     lists.fadeToggle(2000);
+            // })
+
+            // $('#btn2').click(function() {
+            //     header1.fadeIn(1000);
+            //     header2.fadeIn(3000);
+            // })
+            var header1 = $('#header1');
+            var input = $('#name');
+
+
+
+            $('#btn3').on('click', function() {
+                // header1.html('<i>Hello po<i>');
+                // console.log(header1.text());
+                var h1 = header1.text();
+                var select = $('#select');
+                // $('#name').val(h1);
+
+                console.log(select.val());
+            })
+        })
+    </script>
+
+</body>
+
+</html>
+
+</html>
+
+</html>
